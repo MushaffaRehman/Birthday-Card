@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #f6eee9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, serif;
+    color: #493737;
+}
+
+.card {
+    width: 650px;
+    min-height: 520px;
+    background: #fffaf7;
+    border: 1px solid #d8b9b1;
+    padding: 75px;
+    text-align: center;
+    box-shadow: 0 15px 35px #d3beb8;
+    position: relative;
+}
+
+.card::before {
+    content: "♡";
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-size: 35px;
+    color: #b47a7d;
+}
+
+.card::after {
+    content: "♡";
+    position: absolute;
+    bottom: 20px;
+    right: 25px;
+    font-size: 35px;
+    color: #b47a7d;
+}
+
+.card p:first-child {
+    color: #a76d70;
+    font-size: 17px;
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: normal;
+    color: #633f42;
+    margin-bottom: 25px;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 30px;
+    background: #a76d70;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    background: #89595c;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #a76d70;
+    margin-top: 30px;
+}
+ @media (max-width: 600px) {
+    .card {
+        width: 90%;
+        min-height: 480px;
+        padding: 50px 25px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+}
