@@ -12,6 +12,7 @@ body {
     align-items: center;
     font-family: Georgia, serif;
     color: #493737;
+    padding: 20px;
 }
 
 .card {
@@ -22,61 +23,39 @@ body {
     padding: 75px;
     text-align: center;
     box-shadow: 0 15px 35px #d3beb8;
-    position: relative;
+    border-radius: 18px;
 }
-
 .card::before {
-    content: "♡";
+    content: "♡  ✦  ♡";
     position: absolute;
-    top: 20px;
-    left: 25px;
-    font-size: 35px;
+    top: 22px;
+    left: 30px;
+    font-size: 24px;
     color: #b47a7d;
 }
 
 .card::after {
-    content: "♡";
+    content: "♡  ✦  ♡";
     position: absolute;
-    bottom: 20px;
-    right: 25px;
-    font-size: 35px;
+    bottom: 22px;
+    right: 30px;
+    font-size: 24px;
     color: #b47a7d;
 }
-
-.card p:first-child {
-    color: #a76d70;
-    font-size: 17px;
-    letter-spacing: 3px;
-    margin-bottom: 28px;
+.card {
+    position: relative;
 }
-
-h1 {
-    font-size: 48px;
-    font-weight: normal;
-    color: #633f42;
-    margin-bottom: 25px;
-}
-
-.card p {
+p {
     font-size: 18px;
     line-height: 1.9;
     margin-bottom: 20px;
 }
 
-a {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 13px 30px;
-    background: #a76d70;
-    color: white;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-
-a:hover {
-    background: #89595c;
+h1 {
+    font-size: 52px;
+    font-weight: normal;
+    color: #633f42;
+    margin-bottom: 25px;
 }
 
 h2 {
@@ -85,18 +64,57 @@ h2 {
     color: #a76d70;
     margin-top: 30px;
 }
- @media (max-width: 600px) {
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 32px;
+    background: #a76d70;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+}
+
+a:hover {
+    background: #89595c;
+}
+.photos {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photos img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
     .card {
-        width: 90%;
+        width: 100%;
         min-height: 480px;
-        padding: 50px 25px;
+        padding: 60px 25px;
     }
 
     h1 {
         font-size: 36px;
     }
 
-    .card p {
+    p {
         font-size: 16px;
     }
+
+   .photos img {
+    width: 95px;
+    height: 95px;
+} 
 }
